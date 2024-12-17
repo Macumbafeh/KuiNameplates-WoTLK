@@ -99,6 +99,7 @@ L["Current"] = true
 L["Maximum"] = true
 L["Percent"] = true
 L["Deficit"] = true
+L["CurrentPercent"] = true
 L["Blank"] = true
 L["Never show health text"] = true
 L["Mouseover & target only"] = true
