@@ -45,6 +45,9 @@ local function SetFrameCentre(f)
 		f.x = floor((w / 2) - (addon.sizes.frame.width / 2))
 		f.y = floor((h / 2) - (addon.sizes.frame.height / 2))
 	end
+	
+	-- Add your upward offset here:
+    f.y = f.y + 20  -- move nameplates 20px higher
 end
 -- get default health bar colour, parse it into one of our custom colours
 -- and the reaction of the unit toward the player
@@ -170,6 +173,7 @@ do
 		function(f) return kui.num(f.health.max) end,
 		function(f) return floor(f.health.percent) end,
 		function(f) return "-" .. (kui.num(f.health.max - f.health.curr)) end,
+		function(f) return string.format("%s (%.0f%%)", kui.num(f.health.curr), f.health.percent) end, -- 6. Current HP (Percent)
 		function(f) return "" end
 	}
 

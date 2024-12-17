@@ -49,6 +49,7 @@ do
 		L["Maximum"] .. " |cff888888(156k)",
 		L["Percent"] .. " |cff888888(93)",
 		L["Deficit"] .. " |cff888888(-10.9k)",
+		L["CurrentPercent"] .. " |cff888888(145k(93))",
 		L["Blank"] .. " |cff888888(  )"
 	}
 
